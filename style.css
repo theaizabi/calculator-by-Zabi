@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Light mode background color */
+  transition: background-color 0.5s ease;
+}
+
+#calculator {
+  font-family: Arial, sans-serif;
+  background-color: #9c9990; /* Light mode calculator background color */
+  border-radius: 15px;
+  max-width: 500px;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+}
+
+#display {
+  width: 100%;
+  padding: 20px;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  color: #251605;
+  background-color: #e0d8de; /* Light mode display background color */
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: none;
+  background-color: #e0d8de;
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.darkSwi {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: block;
+  margin-left: 400px;
+  margin-top: 20px;
+  border: none;
+  background-color: #f5f5f5; /* Light mode button background color */
+  color: #000; /* Light mode button text color */
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+  background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn {
+  background-color: #2a2b2a;
+  color: #fff;
+}
+
+.dark-mode {
+  background-color: #1e1600; 
+  color: #fff; /* Dark mode calculator background color */
+  /* Dark mode background color */
+}
+
+.dark-mode #calculator {
+  background-color: #343434;
+  color: #fff; /* Dark mode calculator background color */
+}
+
+.dark-mode #display {
+  background-color: #281e05;
+  color: #fff; /* Dark mode calculator background color */
+   /* Dark mode display background color */
+}
+
+.dark-mode .darkSwi {
+  background-color: #1e1600; /* Dark mode button background color */
+  color: #9c9990; /* Dark mode button text color */
+}
